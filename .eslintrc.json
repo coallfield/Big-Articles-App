@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true, // Код выполняется в браузере
+        "es2021": true, // Включает современные возможности ECMAScript 2021
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking", // Использовать рекомендуемые правила ESLint
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest", // ECMAScript последней версии
+        "sourceType": "module", // Поддержка ECMAScript модулей
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "no-console": "warn",
+        "indent": ["warn", 4], // Отступы: 4 пробела
+        "quotes": ["error", "double"], // Двойные кавычки
+        "semi": ["error", "always"], // Точки с запятой обязательны
+        "no-unused-vars": "off", // Предупреждение о неиспользуемых переменных
+        "eqeqeq": "error", // Строгое сравнение ===
+        "react/react-in-jsx-scope": "off",
+        "endOfLine": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+    }
+}
