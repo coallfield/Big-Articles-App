@@ -14,7 +14,7 @@
     "parserOptions": {
         "ecmaVersion": "latest", // ECMAScript последней версии
         "sourceType": "module", // Поддержка ECMAScript модулей
-        "project": "./tsconfig.json"
+        "tsconfigRootDir": "./tsconfig.json"
     },
     "rules": {
         "no-console": "warn",
